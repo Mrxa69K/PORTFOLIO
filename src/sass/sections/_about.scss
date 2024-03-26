@@ -11,6 +11,7 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
+  font-size: 18px;
 
   @include respond(tab-land) {
     height: 100%;
@@ -25,16 +26,20 @@
 
     &__image {
       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       height: 100%;
-      align-items: center;
-      justify-content: center;
-
+      max-width:fit-content;
+      margin-bottom: 15px;
+      
       @include respond(tab-land) {
         height: 100%;
       }
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
+
+      
     }
 
     &__info {
@@ -48,10 +53,10 @@
       }
 
       &-text {
-        text-align: left;
+        text-align:left;
 
         @include respond(tab-port) {
-          text-align: left;
+          text-align: center;
         }
         @include respond(tab-port-sm) {
           text-align: center;
@@ -75,5 +80,25 @@
         }
       }
     }
+
+
+
+    button {
+
+      
+      font-size: 15px; // Makes the font larger. Adjust as needed.
+      color: $white-color; // Use your predefined color variable for text color.
+      background-color: darken($secondary-color, 10%); // Darker version of the secondary color.
+      border: none; // Removes the border.
+      padding: 0.5em 1em; // Adjust padding to your liking.
+      cursor: pointer; // Changes cursor to pointer on hover.
+      transition: background-color 0.3s ease; // Smooth transition for background color on hover.
+      
+      &:hover {
+        background-color: lighten($secondary-color, 10%); // Lightens the button on hover for feedback.
+      }
+      
+    }
+  
   }
 }

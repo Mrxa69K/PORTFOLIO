@@ -7,3 +7,4 @@ export default function initScrollReveal(targetElements, defaultProps) {
     ScrollReveal().reveal(element, Object.assign({}, defaultProps, animation));
   });
 }
+

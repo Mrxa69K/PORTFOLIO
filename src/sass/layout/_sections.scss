@@ -8,3 +8,44 @@ section {
     padding-right: 1rem;
   }
 }
+
+
+#navbar {
+  background-color: $primary-color;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 15px;
+  font-weight: bold;
+  .container {
+    display: flex;
+    justify-content: center; // Changed from center to flex-start
+    align-items: center;
+    width: 100%; // Ensure the container spans the full width of the navbar
+    padding: 0 15px; // Add padding to the container for some spacing on the sides
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 50px; // Adjusted margin for spacing between items
+
+      a {
+        color: $white-color;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 0.5em 1em;
+        transition: color 0.3s ease;
+
+        &:hover, &:focus {
+          color: lighten($secondary-color, 10%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}

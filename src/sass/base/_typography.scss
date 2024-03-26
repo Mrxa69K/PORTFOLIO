@@ -2,6 +2,7 @@
 
 h1 {
   font-weight: 700;
+  font-size: 25px;
 }
 
 p,
@@ -50,4 +51,11 @@ a:hover {
   &:hover {
     transform: translateX(2px);
   }
+}
+
+
+h2 {
+font-size: 20px;
+color: #000000;
+font-style: normal;
 }

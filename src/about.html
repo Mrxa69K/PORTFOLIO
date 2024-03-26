@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- navigation bar -->
+
+    <nav id="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="index.html">Index Page</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="citation.html">Citation</a></li>
+          <li><a href="reflection.html">Academic Reflection</a></li>
+        </ul>
+      </div>
+    </nav>
+        <!-- navigation bar -->
+
+    <!-- Todo: put here your site title -->
+    <title>LARBI GHETTAS | ENGINEER</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+  </head>
+
+  <body>
+
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          I am <span class="text-color-main">Larbi GHETTAS</span>
+          currently pursuing a graduate degree in Electrical Engineering with a specialization in clean energy at the University at Buffalo. 
+          <br />
+        </h1>
+       
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <div class="about-wrapper__info-text">
+                My academic journey began in Algeria, where I earned my undergraduate degree in Industrial Instrumentation Maintenance and a master s degree in Technological Hazard Management in 2015. Post-graduation, I embarked on my professional journey as a Production Engineer for two years. In 2018, I relocated to the USA as a green card holder and had the opportunity to work as a Chemical Operator. After five enriching years in the industry, I decided to further my education in Electrical Engineering, focusing on clean energy. This decision was influenced by my extensive knowledge of electrical education and industrial safety laws, including OSHA regulations...
+              <span id="moreText" >
+                  My exploration into the energy sector made me acutely aware of the environmental implications of traditional energy sources like coal and natural gas. This awareness ignited my passion for renewable energy, which I see as a solution to our environmental challenges. I am driven by my desire to understand the renewable energy market, its obstacles, and the policies that regulate energy production, distribution, and consumption.
+                  For the past two years, I have been juggling full-time work as a Chemical Operator while pursuing my graduate degree. Despite the challenges of managing both, I am grateful for the experience as it did not require me to compromise one for the other. 
+                  As my formal university education comes to an end, I am excited about the prospect of continuing my growth as an engineer in a field that I have grown to love over the years. I am ready to take on the dynamic opportunities and challenges that the energy market offers. My ultimate aspiration is to contribute to a greener, more sustainable Earth where clean energy is not merely an alternative but an integral part of our daily lives.
+              </span>
+              <br></br>
+                
+              
+              <button id="readMoreBtn" onclick="toggleReadMore()">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+
+        
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text"></p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:larbighe@buffalo.edu"
+            >Contact me</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          
+          <a rel="noreferrer" href="https://www.linkedin.com/in/larbi-ghettas" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+         
+        </div>
+
+        <hr />
+
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
