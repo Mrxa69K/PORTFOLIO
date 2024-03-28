@@ -15,15 +15,29 @@ document.getElementById('readMoreBtn').addEventListener('click', toggleReadMore)
 
 
 
+
+
+// Function to toggle the visibility of additional content
 function toggleReadMore() {
-    var moreText = document.getElementById("moreText");
-    var readMoreBtn = document.getElementById("readMoreBtn");
-  
-    if (moreText.style.display === "none") {
+  var moreText = document.getElementById("moreText");
+  var readMoreBtn = document.getElementById("readMoreBtn");
+
+  if (moreText.style.display === "none") {
       moreText.style.display = "inline";
       readMoreBtn.textContent = "Read less";
-    } else {
+  } else {
       moreText.style.display = "none";
       readMoreBtn.textContent = "Read more";
-    }
   }
+}
+
+// Function to initially hide the additional content
+function hideAdditionalContent() {
+  var moreText = document.getElementById("moreText");
+  moreText.style.display = "none";
+}
+
+// Call the hideAdditionalContent function when the page is loaded
+document.addEventListener("DOMContentLoaded", function () {
+  hideAdditionalContent();
+});
