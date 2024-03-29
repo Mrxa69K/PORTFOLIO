@@ -14,8 +14,7 @@ section {
   background-color: $primary-color;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 9px;
   .container {
     display: flex;
     justify-content: center; // Changed from center to flex-start
@@ -31,13 +30,12 @@ section {
     padding: 0;
 
     li {
-      margin-right: 50px; // Adjusted margin for spacing between items
+      margin-right: 20px; // Adjusted margin for spacing between items
 
       a {
         color: $white-color;
         text-decoration: none;
-        font-size: 1em;
-        padding: 0.5em 1em;
+        font-size: 10px;
         transition: color 0.3s ease;
 
         &:hover, &:focus {
