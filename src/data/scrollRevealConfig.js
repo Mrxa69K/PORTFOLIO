@@ -6,7 +6,9 @@ export const defaultProps = {
   mobile: true,
 };
 
-export const targetElements = [
+export const targetElements = 
+[
+
   {
     element: ".section-title",
     animation: {
@@ -64,6 +66,5 @@ export const targetElements = [
       origin: "bottom",
     },
   },
-]
-;
+];
 
