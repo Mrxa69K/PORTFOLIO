@@ -44,7 +44,7 @@ clip-path: none;
 &__info {
   display: flex;
   height: 100%;
-  justify-content: right;
+  justify-content: left;
   flex-direction: column;
   padding: 10px; /* Adjust the value as needed */
 
@@ -59,7 +59,7 @@ clip-path: none;
 }
 
   @include respond(tab-port-sm) {
-    align-items: right;
+    align-items: left;
   }
 
   &-text {
@@ -67,10 +67,10 @@ clip-path: none;
     padding: auto;
 
     @include respond(tab-port) {
-      text-align: right;
+      text-align: left;
     }
     @include respond(tab-port-sm) {
-      text-align: right;
+      text-align: left;
     }
 
     &--important {
@@ -96,7 +96,7 @@ clip-path: none;
 
 
 button {
-  font-size: 1px; // Makes the font larger. Adjust as needed.
+  font-size: 15px; // Makes the font larger. Adjust as needed.
   color: $white-color; // Use your predefined color variable for text color.
   background-color: darken($secondary-color, 10%); // Darker version of the secondary color.
   border: none; // Removes the border.
